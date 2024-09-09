@@ -1,0 +1,7 @@
+# Debug
+/src/obj/Debug/
+
+# Ignore test
+/test/
+/src/bin/
+/src/logs/
