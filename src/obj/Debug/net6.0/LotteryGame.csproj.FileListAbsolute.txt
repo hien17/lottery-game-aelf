@@ -10,3 +10,4 @@
 /home/hien/aelfContracts/lottery-game/src/obj/Debug/net6.0/refint/LotteryGame.dll
 /home/hien/aelfContracts/lottery-game/src/obj/Debug/net6.0/LotteryGame.pdb
 /home/hien/aelfContracts/lottery-game/src/obj/Debug/net6.0/ref/LotteryGame.dll
+/home/hien/aelfContracts/lottery-game/src/obj/Debug/net6.0/LotteryGame.sourcelink.json

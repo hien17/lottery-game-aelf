@@ -258,16 +258,16 @@ aelf-command send $CONTRACT_ADDRESS -a $WALLET_ADDRESS -p $WALLET_PASSWORD -e ht
 If you need to pass file contents as a parameter, you can enter the relative or absolute path of the file
 
 Enter the params one by one, type `Enter` to skip optional param:
-? Enter the required param <value>: 20000
+? Enter the required param <value>: 10000000
 The params you entered is:
 {
-  "value": 20000
+  "value": 10000000
 }
 ✔ Succeed!
 AElf [Info]: 
 Result:
 {
-  "TransactionId": "e8714f5b82f36a30ac608c03b01b31df552df8213aa7aaf41caa43cdcb50e1c9"
+  "TransactionId": "2f055240f4f26db5dfbb491a34473f1d421e04cbe8b511b8d3bcd182082fb77f"
 } 
 ✔ Succeed!
 ```
@@ -281,16 +281,16 @@ aelf-command send $CONTRACT_ADDRESS -a $WALLET_ADDRESS -p $WALLET_PASSWORD -e ht
 If you need to pass file contents as a parameter, you can enter the relative or absolute path of the file
 
 Enter the params one by one, type `Enter` to skip optional param:
-? Enter the required param <value>: ELF
+? Enter the required param <value>: 10000000
 The params you entered is:
 {
-  "value": "ELF"
+  "value": 10000000
 }
 ✔ Succeed!
 AElf [Info]: 
 Result:
 {
-  "TransactionId": "b098cbc2d10fcb1213f3efbcf5ee22783490bbf05b9d714778e44a01c45f619b"
+  "TransactionId": "1853a50de2b56b742741d7d9728624177c73a507bc3c2533e22a8e7157a8e125"
 } 
 ✔ Succeed!
 ```
@@ -317,7 +317,7 @@ Result:
 {
   "symbol": "ELF",
   "owner": "renvwy4neaUgk2ce1qztSSbEjjt1zupQf1UzuR5jbQucUjXfi",
-  "balance": "19705432500"
+  "balance": "19705422500"
 } 
 ✔ Succeed!
 ```

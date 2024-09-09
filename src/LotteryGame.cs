@@ -48,6 +48,14 @@ namespace AElf.Contracts.LotteryGame
             }).Balance;
             Assert(balance >= playAmount, "Insufficient balance");
 
+            // Check ì the contract has enough tokens
+            var contractBalance = State.TokenContract.GetBalance.Call( new GetBalanceInput
+            {
+                Owner = Context.Self,
+                Symbol = TokenSymbol
+            }).Balance;
+            Assert(contractBalance >= playAmount, "Insufficient contract balance");
+
             if(IsWinner())
             {
                 // Transfer the token from the contract to the sender
@@ -135,6 +143,18 @@ namespace AElf.Contracts.LotteryGame
                 To = Context.Self
             });
 
+            return new Empty();
+        }
+
+        // Transfers the ownership of the contract to a new owner.
+        // This method can only be called by the current owner of the contract.
+        public override Empty TransferOwnership(Address input)
+        {
+            AssertIsOwner();
+
+            // Set the new owner address
+            State.Owner.Value = input;
+            
             return new Empty();
         }
 
