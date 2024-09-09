@@ -1,7 +1,8 @@
-# aelf Smart Contract Deployment Guide
+# aelf Lottery Game Smart Contract
 
-This guide will walk you through the steps to deploy a smart contract on the aelf testnet, acquire testnet ELF tokens, and interact with your deployed contract.
-
+This guide will walk you through the steps to deploy a lottery game smart contract on the aelf testnet, acquire testnet ELF tokens, and interact with your deployed contract.</br>
+</br>
+This smart contract implements a lottery game where the outcome is determined by a random number obtained from the blockchain's block height. The key mechanism of this contract involves checking whether the random number is an even number to declare a winner.
 ## Prerequisites
 
 - Ensure you have the aelf CLI tools installed.
